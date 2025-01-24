@@ -1,60 +1,86 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic News Webpage Layout</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <title>Basic News Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
 
+        .header {
+            background-color: #011e29;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .latest-news-section {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 15px;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .latest-news-section h3 {
+            margin-top: 0;
+        }
+
+        .latest-news-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .latest-news-section li {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .pictorial-news-section {
+            background-color: #ffffff;
+            margin: 20px auto;
+            padding: 15px;
+            width: 80%;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .pictorial-news-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-	<header class="header">
-        <h1>Daily News</h1>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">World</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">Technology</a></li>
-                <li><a href="">Sports</a></li>
-                <li><a href="">Entertainment</a></li>
-                <li><a href="">Health</a></li>
-            </ul>
-			</nav>
+
+    <header class="header">
+        <h1>News Today</h1>
     </header>
-    <main>
-        <div class="latest-news-section">
-            <h2>Latest News</h2>
-            <ul>
-                <li>
-                    <h3>Breaking News: COVID-19 Updates</h3>
-                    <p>Stay updated with the latest news on COVID-19 and its impacts globally.</p>
-                </li>
-                <li>
-                    <h3>Stock Market Hits Record Highs</h3>
-                    <p>The stock market has seen unprecedented growth this quarter.</p>
-                </li>
-                <li>
-                    <h3>New Tech Innovations Coming in 2023</h3>
-                    <p>Find out what new technology trends are emerging this year.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="pictorial-news-section">
-            <h2>Pictorial News</h2>
-            <div class="image-container">
-                <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="News Image One">
-                <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="News Image Two">
-                <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="News Image Three">
-            </div>
-        </div>
-    </main>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="latest-news-section">
+        <h3>Latest News</h3>
+        <ul>
+            <li>Breaking News: Market hits an all-time high.</li>
+            <li>Sports: Local team wins championship.</li>
+            <li>Weather: Sunny skies expected this week.</li>
+        </ul>
+    </div>
+
+    <div class="pictorial-news-section">
+        <h3>Pictorial News</h3>
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg" alt="Image One">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG" alt="Image Two">
+        <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG" alt="Image Three">
+    </div>
 
 </body>
-
 </html>
